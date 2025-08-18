@@ -1,0 +1,22 @@
+database:
+  url: postgresql+psycopg2://cg360:cg360@db:5432/cg360
+
+feeds:
+  nvd:
+    enabled: true
+    years: ["2023","2024","2025"]
+    api_key: "${NVD_API_KEY}"   # optional
+  cisa_kev:
+    enabled: false
+    url: "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json"
+  ghsa:
+    enabled: false
+    token: "${GH_TOKEN}"
+
+api:
+  host: 0.0.0.0
+  port: 8080
+
+policy:
+  severity_threshold: "high"   # low|medium|high|critical
+  fail_on_kev: true
