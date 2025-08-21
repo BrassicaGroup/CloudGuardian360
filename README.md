@@ -1,11 +1,9 @@
 # Cloud_360_Proj
 Smart System Solution SecOps Project for Cloud CVEs
 
-
 # CloudGuard360-DB
 Secure, productized vulnerability intelligence microservice for **RM Smart System Solutions**.  
 Ingests CVE feeds, normalizes to Postgres, matches against CycloneDX SBOMs, and exposes a REST API for policy gates.
-
 
 ## Calling API
 curl 'http://localhost:8080/v1/cves?q=openssl&min_score=7.0'
