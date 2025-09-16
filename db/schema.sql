@@ -1,5 +1,5 @@
 -- Postgres schema for CloudGuard360-DB
-create table if not exists cve (
+create table if not exists cves (
   id text primary key,
   published timestamptz,
   last_modified timestamptz,
